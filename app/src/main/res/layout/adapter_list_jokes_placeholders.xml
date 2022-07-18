@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/defaultMargin"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:background="@color/colorGray"
+        android:id="@+id/ivIcon1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvJoke1"
+        android:background="@color/colorGray"
+        app:layout_constraintTop_toTopOf="@id/ivIcon1"
+        app:layout_constraintBottom_toTopOf="@id/tvUpdated1"
+        app:layout_constraintLeft_toRightOf="@id/ivIcon1"
+        android:layout_marginLeft="16dp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:layout_width="200dp"
+        android:layout_height="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUpdated1"
+        android:background="@color/colorGray"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
